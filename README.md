@@ -1,7 +1,7 @@
 
 # Invoice System for Sparkling Pixels
 
-This project is a **fully featured Invoice system** developed for Sparkling Pixels Photography Studio. It is built using **HTML, CSS, JavaScript, PHP**, and **SQLite** as a web project. After development, it is converted into a desktop application using the [**PHP DESKTOP**](https://github.com/cztomczak/phpdesktop) library.
+This project is a **fully featured Invoice system** developed for Sparkling Pixels Photography Studio. It is built using **HTML, CSS, JavaScript, PHP**, and **SQLite** as a web project. After development, it is converted into a desktop application using the Electron js.
 
 ![Cover](readme_imgs/cover.jpg)
 
@@ -78,15 +78,14 @@ Tracking Payments
 Backup and Restore
 ![Backup and Restore](readme_imgs/6.jpg)
 
-## Getting Started
+## Prerequisites
 
-To run this project locally, follow these steps:
+Before running the application, ensure you have the following installed:
 
-1. Clone the repository.
-2. Set up a local server environment (e.g., XAMPP, WAMP, or MAMP).
-3. Import the project database.
-4. Configure the necessary settings in `app/core/config.php`.
-5. Run the application on the local server.
+- **Node.js** (v16 or higher)
+- **PHP** (v8.1 or higher)
+- **Electron.js** (installed automatically via `npm`)
+
 
 ## Contributors
 
