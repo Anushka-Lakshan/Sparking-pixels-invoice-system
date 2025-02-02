@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Reem";
+  src: url("Reem.ttf") format("truetype");
+  /* Add additional font formats (e.g., woff, woff2) for better cross-browser support */
+}
+
+:root,
+body {
+  font-family: "Reem" !important;
+  color: black;
+}
+
+#invoice-body {
+  font-size: 10px;
+  line-height: 1.5;
+  /* width: 595px;
+  min-width: 595px;
+  max-width: 595px;
+  margin: 0 auto;
+  height: 842px; */
+  width: 210mm;
+  height: 297mm;
+  background-color: white;
+  margin-bottom: 20px;
+  border: black 1px solid;
+  padding: 15px 30px !important;
+  position: relative;
+}
+
+#lens-img {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.lens-box {
+  position: relative;
+  overflow: visible;
+}
+
+h4 > span {
+  color: #a11cac;
+}
+
+.text-bold {
+  font-weight: bolder;
+}
+
+table > * {
+  color: black;
+}
+
+#item-table th,
+#item-table td {
+  padding: 8px !important;
+  font-size: 9px;
+}
+
+#item-table tbody > tr > td:nth-child(4) {
+  text-align: center;
+}
+#item-table tbody > tr > td:nth-child(2) {
+  white-space: pre-line;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+#item-table {
+  border-top: black 4px solid;
+  border-bottom: black 2px solid;
+}
+
+#total-table > tbody {
+  padding: 10 0 !important;
+}
+
+tfoot {
+  border-top: black 2px solid;
+  margin-top: 20px;
+}
+
+tfoot > tr > td {
+  padding: 8px 0 !important;
+  font-size: 10px;
+}
+
+#terms {
+  font-size: 8px !important;
+  margin-top: 30px;
+}
+
+#terms h1,
+#terms h2,
+#terms h3,
+#terms h4 {
+  font-size: 11px;
+  font-weight: bolder;
+}
+
+#terms ul,
+#terms ol {
+  padding-left: 10px;
+}
+
+#footer {
+  font-size: 8px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+}
+
+#footer > .text-right {
+  float: right;
+}
+
+/* Additional styles for A4 size */
+@media print {
+  @page {
+    size: A4; /* Set A4 size */
+    margin: 0;
+    /* No margin */
+  }
+
+  body {
+    width: 210mm;
+    height: 297mm;
+    background-color: #a11cac; /* No margin */
+  }
+
+  #invoice-body {
+    width: 595px;
+    height: 842px; /* Set width to match A4 width */
+    margin: 0; /* Center the content horizontally */
+  }
+
+  /* 595 X 842 pixels */
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*@@css*/
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <img id="logo" src="@@logo" alt="" type="image" />
+      <img id="lens-img" src="@@lens" alt="" type="image" />
+      <div class="invoice-header clearfix">
+        <div class="our-details">
+          <b>Sparkling Pixels</b><br />
+          @@address <br />
+          <a href="mailto:@@email">@@email</a>
+          <br />
+          <a href="tel:@@tel">@@tel</a>
+        </div>
+        <div class="client-details">
+          <b>@@client</b><br />
+          <a href="@@c_email">@@c_email</a>
+          <br />
+          <a href="@@c_tel">@@c_tel</a>
+        </div>
+      </div>
+      <div class="sub-heading clearfix">
+        <div class="left">
+          <h1>
+            INVOICE
+            <span> # </span><br />
+            <span> SP @@id </span>
+          </h1>
+        </div>
+        <div class="right">
+          <table class="info">
+            <tr>
+              <td>Invoice Date:</td>
+              <td>@@date</td>
+            </tr>
+            <tr>
+              <td>Balance Due:</td>
+              <td>@@balance LKR</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <table id="item-table" class="table table-striped">
+        <thead>
+          <tr>
+            <th width="15%">Item</th>
+            <th width="35%">Description</th>
+            <th width="20%">Unit Cost</th>
+            <th width="10%">Quantity</th>
+            <th width="20%">Line Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          @@itemTable
+        </tbody>
+      </table>
+
+      <div class="row ">
+        <!-- <div class="left">
+          <div id="terms"></div>
+        </div> -->
+
+        <div class="right">
+          <table id="Total-table">
+            <tbody>
+              <tr>
+                <td>SubTotal</td>
+                <td>@@subTotal LKR</td>
+              </tr>
+              @@Discount @@Paid
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Balance Due</td>
+                <td>@@balance LKR</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <table style="margin-top: 15px !important;">
+        <tr>
+          <td width="58%">
+            <div id="terms">@@terms </div> 
+          </td>
+          <td width="3%"></td>
+          <td width="40%" class="detailes">
+            
+          </td>
+          </tr>
+      </table>
+
+      
+    </div>
+    <div class="" id="footer">
+      <span class="text-left"> Invoicing System Developed By: A Lakshan</span>
+      <span class="text-right">+947 6611 6604</span>
+    </div>
+  </body>
+</html>

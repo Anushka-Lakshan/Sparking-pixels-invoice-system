@@ -1,0 +1,225 @@
+body {
+  font-family: "Reem Kufi";
+  margin: 0px;
+  line-height: 0.9;
+  font-size: 0.8rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: "Reem Kufi";
+  src: url("./assets/Reem.ttf") format("truetype");
+}
+
+#content {
+  width: calc(100% + 40px);
+  position: relative;
+  margin: -20px -20px;
+  /* background: #22eb1b80; */
+}
+
+#logo {
+  width: 260px;
+  position: relative;
+  top: 15px;
+  left: -5px;
+  margin-bottom: 15px;
+}
+
+#lens-img {
+  position: absolute;
+  width: 230px;
+  top: 5px;
+  right: -50px;
+  z-index: -1;
+}
+
+.invoice-header {
+  width: 73%;
+  margin-bottom: 5px;
+}
+
+.our-details {
+  float: left;
+}
+
+.client-details {
+  float: right;
+  text-align: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sub-heading {
+  width: 100%;
+}
+
+.sub-heading > .left {
+  float: left;
+}
+
+.sub-heading > .right {
+  float: right;
+  width: 35%;
+}
+
+h1 {
+  line-height: 0.7;
+  font-size: 2.15em;
+}
+h1 > span {
+  font-weight: 400;
+  color: #a11cac;
+  transform: skewX(-10deg);
+  padding-left: 5px;
+}
+
+.info {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+.info tr td:last-child {
+  text-align: right;
+  font-weight: normal;
+}
+
+/* bt4 styles */
+
+/* Custom styles for .table */
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-top: black 4px solid;
+  /* border-bottom: black 2px solid; */
+  margin-top: -10px;
+  min-height: 150px;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem;
+  vertical-align: top;
+  border: none;
+  /* border-top: 1px solid #dee2e6; */
+}
+
+
+.table thead th {
+  vertical-align: bottom;
+  text-align: left;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Custom styles for .table-striped */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(238, 238, 238);
+}
+.table-striped tbody tr td:nth-of-type(2) {
+  white-space: pre-line;
+  font-size: 0.75rem;
+  line-height: 0.7;
+}
+.table-striped tbody tr td:nth-of-type(4) {
+  text-align: center;
+}
+.table-striped tbody tr td:nth-of-type(5) {
+  text-align: right;
+}
+.table-striped thead tr th:nth-of-type(5) {
+  text-align: right;
+}
+
+#Total-table tr td:last-child {
+  text-align: right;
+}
+#Total-table tr td:first-child {
+  font-weight: bold;
+}
+
+#Total-table tbody {
+  border-bottom: #000 1px solid;
+}
+#Total-table hr {
+  background: #000;
+  width: 100%;
+  display: block;
+}
+
+#Total-table tfoot {
+  font-size: 0.9rem;
+  line-height: 1.1;
+  /* background-color: aqua; */
+}
+
+.row{
+    border-top: #000 2px solid;
+    padding-top: 8px;
+    /* background: #1866f8; */
+}
+
+.row > .left {
+  /* float: left; */
+  margin-left: auto;
+  width: 55%;
+}
+
+.row > .right {
+  float: right;
+  width: 40%;
+}
+
+.detailes{
+  /* background: #861515; */
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+
+#Total-table {
+  width: 100%;
+  /* background: #61ff2288; */
+  
+}
+
+#terms {
+  /* width: 100%; */
+  line-height: 0.7;
+
+  font-size: 0.7rem;
+  /* background-color: #a01cac79; */
+}
+
+#terms p {
+  /* outline: red 2px solid; */
+  margin-bottom: -4px;
+}
+
+#footer {
+    font-size: 12px;
+    position: fixed;
+    left: -45px;
+    bottom: -45px;
+    width: 110%;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  #footer > .text-right {
+    float: right;
+  }
